@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    font-family: sans-serif;
+    display: flex;
+}
+
+.AddRowForm-Wrapper {
+    display: flex;
+}
+
+.AddRowForm {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.AddRowForm-Top {
+    display: flex;
+    column-gap: 20px;
+    align-items: flex-end;
+}
+
+.AddRowForm-Field {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.AddRowForm-Control {
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 40px;
+    width: 180px;
+    padding: 0 10px;
+}
+
+.AddRowForm-Button {
+    background: none;
+    padding: unset;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 40px;
+    width: 80px;
+    cursor: pointer;
+}
+
+.AddRowForm-Bot {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.AddRowForm-Spans {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+
+.AddRowForm-Row-Wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 15px 30px;
+}
+
+.row-comp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row-events {
+    display: flex;
+    column-gap: 10px;
+}
+
+i {
+    cursor: pointer;
+}
