@@ -1,3 +1,9 @@
+import PropTypes from 'prop-types';
+
+/**
+ * Компонент «Элемент блока с новостями». Структура новости.
+ */
+
 export function NewsElement(props) {
     return (
         <div className="news__element">
@@ -7,4 +13,9 @@ export function NewsElement(props) {
             </span>
         </div>
     );
+}
+
+NewsElement.propTypes = {
+    image: PropTypes.string,
+    children: PropTypes.array,
 }

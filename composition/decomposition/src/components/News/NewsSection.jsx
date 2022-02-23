@@ -1,5 +1,10 @@
 import {NewsElement} from "./NewsElement";
 import {NewsTitle} from "./NewsTitle";
+import PropTypes from 'prop-types';
+
+/**
+ * Компонент «Секция новостей». Структура секции с массивом новостей.
+ */
 
 export function NewsSection(props) {
 
@@ -41,4 +46,10 @@ export function NewsSection(props) {
             </div>
         </div>
     );
+}
+
+NewsSection.propTypes = {
+    newsArray: PropTypes.array,
+    sections: PropTypes.array,
+    clicked: PropTypes.func,
 }

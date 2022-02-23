@@ -1,3 +1,9 @@
+import PropTypes from 'prop-types';
+
+/**
+ * Компонент «Заголовок блока с новостями». При клике на заголовок, он становится активным и изменяется вывод блока новостей.
+ */
+
 export function NewsTitle(props) {
     return (
         <h1
@@ -9,4 +15,11 @@ export function NewsTitle(props) {
             {props.children}
         </h1>
     );
+}
+
+NewsTitle.propTypes = {
+    idx: PropTypes.number,
+    active: PropTypes.bool,
+    title: PropTypes.string,
+    children: PropTypes.array,
 }

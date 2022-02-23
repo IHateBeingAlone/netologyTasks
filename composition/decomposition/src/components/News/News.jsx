@@ -1,6 +1,10 @@
 import {NewsSection} from "./NewsSection";
 import {useState} from 'react';
 
+/**
+ * Компонент «Новости». Контейнер секций новостей и их заголовков.
+ */
+
 export function News() {
 
     const smi = [
