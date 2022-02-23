@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#root {
+    font-family: sans-serif;
+    display: flex;
+    width: max-content;
+    height: max-content;
+}
+ul, li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+html, body, h1,h2,h3,h4,h5,h6, p {
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.collapse {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    border: 1px #e8e8e8 solid;
+    padding: 16px;
+}
+.collapse__content {
+    overflow: hidden;
+    visibility: hidden;
+    height: 0;
+    transition: height 0.2s;
+}
+.expanded .collapse__content {
+    visibility: visible;
+    height: 35px;
+    margin-bottom: 15px;
+    transition: height 0.2s;
+}
+.collapse__link {
+    width: max-content;
+    display: flex;
+    column-gap: 6px;
+}
+.link__text {
+    border-color: rgba(11, 31, 53, 0.3);
+    border-bottom-style: dashed;
+    border-bottom-width: 1px;
+}
+.link__icon {
+    display: flex;
+    transform: rotate(180deg);
+    width: 18px;
+    height: 18px;
+    background-image: url(https://alfa-laboratory.github.io/arui-feather/styleguide/icon_arrow-up_s_black.9bc156171667a69a5c279bad4288ca20.svg);
+    transition: 0.2s;
+}
+.expanded .link__icon {
+    transform: rotate(0deg);
+}
